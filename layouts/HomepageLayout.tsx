@@ -1,15 +1,11 @@
 import ReccomendedArtists from "../components/ReccomendedArtists";
+import SearchBar from "../components/SearchBar";
 import "../styles/Homepage.module.scss";
 
 const HomepageLayout = (props) => {
   return (
     <>
-      <div className="homepage-wrapper">
-        {/* <div className="search-bar">
-          <span>Cerca</span>
-          <input type="search" name="" id="" />
-        </div> */}
-      </div>
+      <SearchBar />
       <ReccomendedArtists items={props.reccomendedArtists} />
     </>
   );
